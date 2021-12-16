@@ -14,4 +14,4 @@ RUN go build -tags musl ./..
 
 EXPOSE 8080
 
-CMD [ "/hellowWorld" ]
+CMD [ "/helloworld" ]
