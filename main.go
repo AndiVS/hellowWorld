@@ -12,7 +12,7 @@ func main() {
 
 	e := echo.New()
 	e.GET("/", func(c echo.Context) error {
-		return c.String(http.StatusOK, fmt.Sprintf("Hello, %s", postgresConfig.DbName))
+		return c.String(http.StatusOK, fmt.Sprintf("Hello, asd aplko  %s", postgresConfig.DbName))
 	})
 
 	e.Logger.Fatal(e.Start(":8080"))
