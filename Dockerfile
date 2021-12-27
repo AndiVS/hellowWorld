@@ -9,7 +9,6 @@ COPY go.sum ./
 COPY go.mod ./
 RUN go mod download
 
-COPY /config /config
 COPY main.go /
 
 RUN go build -o helloworld
