@@ -2,7 +2,11 @@ module helloworld
 
 go 1.17
 
-require github.com/labstack/echo v3.3.10+incompatible
+require (
+	github.com/caarlos0/env v3.5.0+incompatible
+	github.com/labstack/echo v3.3.10+incompatible
+	github.com/sirupsen/logrus v1.8.1
+)
 
 require (
 	github.com/labstack/gommon v0.3.1 // indirect
