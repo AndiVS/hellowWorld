@@ -16,21 +16,4 @@ spec:
       containers:
         - name: helloworld
           image: "helloworld:latest"
-          env:
-            - name: POSTGRES_PASSWORD
-              valueFrom:
-                secretKeyRef:
-                  name: postgres-secret-config
-                  key: password
-            - name: POSTGRES_PORT
-              value: '5432'
-            - name: POSTGRES_USER
-              value: postgres
-            - name: POSTGRES_DBNAME
-              value: postgres
-              # для получения адреса сервиса
-              # внутри кластера используется структура
-              # <service-name>.<namespace>.svc.cluster.local
-            - name: POSTGRES_HOST
-              value: postgres-service.default.svc.cluster.local
           imagePullPolicy: IfNotPresent
