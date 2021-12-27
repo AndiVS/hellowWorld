@@ -11,6 +11,6 @@ spec:
       protocol: TCP
       targetPort: 8080
       # nodePort можно не указывать, тогда он будет сгенерирован кластером
-      nodePort: 30081
+      nodePort: 30085
   selector:
     app: helloworld
