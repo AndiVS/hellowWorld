@@ -15,5 +15,5 @@ spec:
     spec:
       containers:
         - name: helloworld
-          image: "helloworld:latest"
+          image: "helloworld:gcr.io/$PROJECT_ID/$IMAGE:$GITHUB_SHA"
           imagePullPolicy: IfNotPresent
